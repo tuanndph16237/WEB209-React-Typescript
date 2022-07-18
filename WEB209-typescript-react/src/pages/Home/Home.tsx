@@ -1,9 +1,13 @@
 import React from "react";
+import Header from '../../components/Header/Header'
 
-const Home = () => {
+
+const HomePage = () => {
     return (
-        <h1>Home</h1>
+        <>
+            <h1>User Page</h1>
+        </>
     )
 }
 
-export default Home
+export default HomePage
