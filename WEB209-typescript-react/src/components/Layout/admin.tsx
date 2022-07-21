@@ -1,67 +1,67 @@
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { PhoneOutlined, LaptopOutlined, TabletFilled, AudioOutlined, SettingOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu } from 'antd';
 import React from 'react';
-const { Header, Content, Sider } = Layout;
-const items1 = ['1', '2', '3'].map((key) => ({
-  key,
-  label: `nav ${key}`,
-}));
-const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
-  const key = String(index + 1);
-  return {
-    key: `sub${key}`,
-    icon: React.createElement(icon),
-    label: `subnav ${key}`,
-    
-  };
-});
+import { Link, Outlet } from 'react-router-dom'
+import styled from 'styled-components';
 
-const Admin = () => (
+import LogoImage from '../../assets/imgs/logo.png'
+
+const { Header, Content, Sider } = Layout;
+
+const item3: MenuProps['items'] = [
+  { key: "cellphone", icon: <PhoneOutlined />, label: <Link to="/admin">Điện thoại</Link> },
+  { key: "laptop", icon: <LaptopOutlined />, label: "Laptop" },
+  { key: "tablet", icon: <TabletFilled />, label: "Máy tính bảng" },
+  { key: "audio", icon: <AudioOutlined />, label: "Âm thanh" },
+  {
+    key: "categories", icon: <SettingOutlined />,
+    label: <Link to="/admin/categories">Categories</Link>
+  },
+]
+
+const App: React.FC = () => (
   <Layout>
-    <Header className="header">
-      <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} />
-    </Header>
+    <HeaderCustom>
+      <Logo src={LogoImage} />
+      {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} /> */}
+    </HeaderCustom>
     <Layout>
-      <Sider width={200} className="site-layout-background">
+      <Sider
+        collapsible={true}
+        width={200}
+        className="site-layout-background">
         <Menu
           mode="inline"
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
-          style={{
-            height: '100%',
-            borderRight: 0,
-          }}
-          items={items2}
+          style={{ height: '100%', borderRight: 0 }}
+          items={item3}
         />
       </Sider>
-      <Layout
-        style={{
-          padding: '0 24px 24px',
-        }}
-      >
-        <Breadcrumb
-          style={{
-            margin: '16px 0',
-          }}
-        >
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
-        <Content
-          className="site-layout-background"
-          style={{
-            padding: 24,
-            margin: 0,
-            minHeight: 280,
-          }}
-        >
-          Content
-        </Content>
+      <Layout style={{ padding: '0 24px 24px' }}>
+        <ContentCustom>
+          <Outlet />
+        </ContentCustom>
       </Layout>
     </Layout>
   </Layout>
 );
 
-export default Admin;
+const HeaderCustom = styled(Header)`
+    background-color: #00B0D7;
+    height: 64px;
+    display: flex;
+    align-items: center;
+`
+
+const Logo = styled.img`
+    width: 64px;
+    height: auto;
+`
+
+const ContentCustom = styled(Content)`
+  min-height: 100vh;
+`
+
+export default App;
