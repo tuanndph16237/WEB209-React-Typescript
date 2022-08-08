@@ -20,18 +20,17 @@ import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/banner/Banner";
 import FaceboookT from "../../assets/images/Rectangle.png";
 import Google from "../../assets/images/Rectangle (1).png";
-import { signin } from "../../api/auth";
-import { auth } from "../../utils/Stogare";
+import { signup } from "../../api/auth";
 const { TextArea } = Input;
 const { Option } = Select;
 
-const Login: React.FC = () => {
+const Signup: React.FC = () => {
   const navigate = useNavigate();
   const onFinish = async (values: any) => {
     try {
-      const {data: user} = await signin(values);
-      message.success("Đăng nhập thành công");
-      auth(user, () => navigate('/'))
+      const { data: user } = await signup(values);
+      message.success("Đăng ký thành công");
+      navigate("/signin");
     } catch (err) {
       message.error("Có lỗi xảy ra");
     }
@@ -40,6 +39,7 @@ const Login: React.FC = () => {
   const onFinishFailed = (errorInfo: any) => {
     console.log("Failed:", errorInfo);
   };
+
   return (
     <div>
       <Header />
@@ -51,7 +51,7 @@ const Login: React.FC = () => {
           layout="vertical"
         >
           <Typography.Title level={2} style={{ margin: 0 }}>
-            Đăng nhập
+            ĐĂNG KÝ
           </Typography.Title>
           <Row>
             <Col>
@@ -63,6 +63,18 @@ const Login: React.FC = () => {
               >
                 <Input size="large" style={{ width: "400px" }} />
               </Form.Item>
+
+              <Form.Item
+                name="Số điện thoại"
+                labelCol={{ span: 24 }}
+                label="Số điện thoại"
+                rules={[
+                  { required: true, message: "Số điện thoại không được trống" },
+                ]}
+              >
+                <InputNumber size="large" style={{ width: "400px" }} />
+              </Form.Item>
+
               <Form.Item
                 name="password"
                 labelCol={{ span: 24 }}
@@ -71,11 +83,21 @@ const Login: React.FC = () => {
                   { required: true, message: "Mật khẩu không được trống" },
                 ]}
               >
-                <Input.Password  size="large"/>
+                {/* <Input size="large" /> */}
+                <Input.Password size="large" />
               </Form.Item>
+              {/*  */}
               <Form.Item>
-                <Button type="primary" htmlType="submit" style={{ width: "400px" }} >
-                  Đăng Nhập
+                <a href="/signin">Bạn đã có tài khoản</a>
+              </Form.Item>
+
+              <Form.Item>
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  style={{ width: "400px" }}
+                >
+                  Đăng ký
                 </Button>
               </Form.Item>
               <ContainerT>
@@ -154,4 +176,4 @@ const ImagePreview = styled.img`
   width: 250px;
   height: 50%;
 `;
-export default Login;
+export default Signup;

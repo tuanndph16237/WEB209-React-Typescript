@@ -1,17 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import 'antd/dist/antd.css';
 import { BrowserRouter } from 'react-router-dom'
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-
-const queryClient = new QueryClient()
-
+import App from './App'
+import './index.css'
+import 'antd/dist/antd.css';
+import { Provider } from 'react-redux'
+import CartRedux from './cartRedux/CartRedux'
 ReactDOM.createRoot(document.getElementById('root')!).render(
-
   <BrowserRouter>
-    <QueryClientProvider client={queryClient}>
+    <Provider store={CartRedux}>
       <App />
-    </QueryClientProvider>
+    </Provider>
   </BrowserRouter>
 )

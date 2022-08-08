@@ -1,40 +1,54 @@
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import HomeLayout from "./pages/layout/HomeLayout";
+import AdminLayout from "./pages/layout/AdminLayout";
+import DashboardLayout from "./components/Dassboard/Dassboard";
+import Signin from "./pages/Auth/Signin";
+import ProductAdd from "./pages/admin/products/ProductAdd";
+import ProductEdit from "./pages/admin/products/ProductEdit";
+import ProductAdminPage from "./pages/admin/products/Products";
+import CategoryAdminPage from "./pages/admin/categories";
+import CategoryAdd from "./pages/admin/categories/CategoryAdd";
+import CategoryEdit from "./pages/admin/categories/CategoryEdit";
+import ProductDetail from "./pages/admin/products/DetailProducts";
+import Home from "./pages/users/Home";
+import Signup from "./pages/Auth/signup";
+import Products from "./pages/users/ClientProduct/Products";
+import Cart from "./pages/users/cart/Cart";
+import Private from "./utils/Private";
 
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import {Routes, Route} from 'react-router-dom'
-import ProductAdminPage from './pages/Admin/Product/Product'
-import CategoriesPage from './pages/Admin/category'
-import AdminLayout from './components/Layout/Admin'
-import UserLayout from './components/Layout/User'
-import HomePage from './pages/Home/home'
-import AddProductPage from './pages/Admin/Product/Add'
-import DetailPage from './pages/Home/Detail/detail'
-import EditProduct from './pages/Admin/Product/Edit'
-import SigninPage from './pages/Auth/Signin'
+function App() {
+  const [count, setCount] = useState(0);
 
-function App(props: any) {
-  const [count, setCount] = useState(0)
   return (
-    <div className="App">
-      <Routes>
-        {/* Auth */}
-        <Route path='/signin' element={<SigninPage/>}/>
-        {/* User layout */}
-        <Route path='/' element={<UserLayout/>}>
-          <Route index element={<HomePage/>}/>
-          <Route path='detail' element={<DetailPage/>}/>
+    <Routes>
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="cart" element={<Cart />} />
+      <Route element={<HomeLayout />}>
+        <Route index element={<Home />} />   
+        <Route path="products/:id" element={<Products />} />
+       
+      </Route>
+      
+      <Route path="/admin" element={<Private><DashboardLayout/></Private> }>
+        {/* <Route index element={<AdminLayout/>} /> */}
+        <Route>
+          <Route path="product" element={<ProductAdminPage />} />
+          <Route path="product/add" element={<ProductAdd />} />
+          <Route path="product/edit/:id" element={<ProductEdit />} />
+          <Route path="product/detail/:id" element={<ProductDetail />} />
         </Route>
-        {/* Admin layout */}
-        <Route path='admin' element={<AdminLayout/>}>
-          <Route index element={<ProductAdminPage/>}/>
-          <Route path='product/add' element={<AddProductPage/>}/>
-          <Route path='product/edit' element={<EditProduct/>}/>
-          <Route path='categories' element={<CategoriesPage/>}/>
+        <Route>
+          <Route path="category" element={<CategoryAdminPage />} />
+          <Route path="category/add" element={<CategoryAdd />} />
+          <Route path="category/edit/:id" element={<CategoryEdit />} />
         </Route>
-      </Routes>
-    </div>
-  )
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

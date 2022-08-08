@@ -1,54 +1,138 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "tuanndph16237@fpt.edu.vn",
+      "password": "tuan12345",
+      "phone": "0858891363",
+      "id": 1
+    }
+  ],
   "products": [
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 122222,
-      "saleOffPrice": 12312321312,
-      "feature": "Apple iPhone 13 Pro Max",
-      "description": "Apple iPhone 13 Pro Max",
-      "id": 1
+      "id": 1,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "description": "adsdadass",
+      "categoryProductId": 1,
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
-      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
-      "id": 2
+      "id": 2,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
-      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
-      "id": 3
+      "id": 3,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
     },
     {
-      "name": "Apple iPad Air (4th Gen) Wi-Fi, 2020",
-      "originalPrice": 15990000,
-      "saleOffPrice": 14870000,
-      "feature": "Màn hình Liquid Retina 10.9 inch tuyệt đẹp với True Tone và dải màu rộng P31\nChip A14 Bionic với Neural Engine\nXác thực bảo mật với Touch ID",
-      "description": "Pad Air hoàn toàn mới. Linh hoạt hơn bao giờ hết. Màn hình Liquid Retina 10.9 inch tuyệt đẹp với dải màu rộng cho bạn trải nghiệm thị giác vô cùng sống động và chi tiết khi xem ảnh hay video cũng như khi chơi game trên thiết bị.1 Chip A14 Bionic tích hợp công nghệ Neural Engine nổi bật với hiệu năng vận hành mạnh mẽ và các tính năng máy học cao cấp, hỗ trợ tối đa tác vụ biên tập video 4K, soạn bài thuyết trình đẹp mắt hay thiết kế mô hình 3D - mọi tác vụ đều thật dễ dàng. Thiết bị giờ đã hỗ trợ Magic Keyboard và Apple Pencil (thế hệ thứ 2),2 Touch ID nhanh nhạy, dễ sử dụng, bảo mật cao, camera sau 12MP và camera FaceTime HD 7MP, cổng kết nối USB-C hỗ trợ sạc và phụ kiện, thời lượng pin bền bỉ cả ngày,3 công nghệ Wi-Fi 6 và LTE tốc độ cao.4 Với iPad Air trong tay, bạn đã có đủ sức mạnh để hiện thực hóa mọi ý tưởng của bản thân",
-      "id": 4
+      "id": 4,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
     },
     {
-      "name": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "originalPrice": 121212,
-      "saleOffPrice": 21213213,
-      "feature": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "description": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "id": 5
+      "id": 5,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
     },
     {
-      "name": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "originalPrice": 121212,
-      "saleOffPrice": 21213213,
-      "categories": "laptop",
-      "feature": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "description": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su)",
-      "id": 6
+      "id": 6,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
+    },
+    {
+      "id": 7,
+      "name": "iphone 11",
+      "originalPrice": "giá gốc",
+      "saleOffPrice": "gia khuyến mãi",
+      "feature": "iphone 11",
+      "description": "adsdadass",
+      "categoryProductId": "2",
+      "shortDescription": "iphone 11",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmyxfWooBjaZcESs2XGkGO6UsQfduv0iTm0rmQ-UcNlTEXtgTf7tsqb9elRkdo46vePUfCV7qPPkU&usqp=CAc"
+    },
+    {
+      "createdAt": "1993-03-29T21:53:08.570Z",
+      "name": "Samsung Galaxy S22 Ultra (8GB - 128GB)",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1658742698/anhhtus/hun3narxslfclvziux3c.jpg",
+      "originalPrice": 30990000,
+      "saleOffPrice": 24490000,
+      "feature": "Vi xử lý mạnh mẽ nhất Galaxy - Snapdragon 8 Gen 1 (4 nm)\nCamera mắt thần bóng đêm Nightography - Chụp đêm cực đỉnh",
+      "description": "Đúng như các thông tin được đồn đoán trước đó, mẫu flagship mới của gả khổng lồ Hàn Quốc được ra mắt với tên gọi là Samsung Galaxy S22 Ultra với nhiều cải tiến đáng giá. Mẫu điện thoại cao cấp đến từ Samsung này có nhiều thay đổi từ thiết kế, cấu hình cho đến camera. Vậy siêu phẩm này có gì mới, giá bao nhiêu và có nên mua không? Hãy cùng tìm hiểu chi tiết ngay bên dưới nhé!",
+      "shortDescription": "shortDescription 1",
+      "id": "1",
+      "categories": "phone",
+      "isDelete": true
+    },
+    {
+      "createdAt": "2038-08-11T00:35:13.193Z",
+      "name": "Samsung Galaxy A33 (5G)",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1658742698/anhhtus/hun3narxslfclvziux3c.jpg",
+      "originalPrice": 8490000,
+      "saleOffPrice": 7050000,
+      "feature": "Màn hình giải trí lớn, sắc nét từng chi tiết - 6.4 inch, Full HD+ cho hình ảnh sắc nét, chân thực\n4 camera hỗ trợ chụp ảnh chuyên nghiệp - Camera chính lến đến 48 MP ghi lại trọn vẹn chi tiết đáng giá",
+      "description": "Samsung vừa chính thức giới thiệu loạt sản phẩm thuộc dòng điện thoại tầm trung Galaxy A 2022, trong đó không thể không nhắc đến chính là Samsung Galaxy A33 với nhiều cải tiến hấp dẫn. Vậy điện thoại này có giá bao nhiêu, có gì nổi bật và có đáng mua không? Cùng tìm hiểu chi tiết ở bài viết dưới đây nhé!",
+      "shortDescription": "shortDescription 2",
+      "id": "2",
+      "categories": "phone",
+      "isDelete": false
+    },
+    {
+      "createdAt": "2084-12-31T12:15:58.532Z",
+      "name": "Macbook Pro 14 inch 2021 | Chính hãng Apple Việt Nam",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1658743120/anhhtus/uq0uy5jgygt3ym0xdlh7.jpg",
+      "originalPrice": 52990000,
+      "saleOffPrice": 47990000,
+      "feature": "Hiệu năng vượt trội - Cân mọi tác vụ từ công việc, đồ họa cho đến những tựa game nặng\nĐa nhiệm mượt mà - RAM 16 GB giải quyết khối lượng công việc “nặng đô” một cách nhanh chóng và ấn tượng",
+      "description": "Macbook Pro 14 inch - Chiếc Macbook đáng mong đợi nhất 2021\nKế thừa những tinh hoa từ đời MacBook tốt nhất cùng với những nâng cấp đáng kể trong nhiều năm qua, Macbook Pro 14 inch dự kiến sẽ là mẫu laptop làm cho giới công nghệ \"phát sốt\", cũng như là cỗ máy xử lý công việc tối ưu hiệu quả.",
+      "shortDescription": "shortDescription 3",
+      "id": "3",
+      "categories": "laptop"
+    },
+    {
+      "createdAt": "2015-06-21T03:43:48.431Z",
+      "name": "nhanma",
+      "image": "image 4",
+      "originalPrice": 16551,
+      "saleOffPrice": 12354,
+      "feature": " hubhbhbj",
+      "description": "bjknhkb",
+      "shortDescription": "shortDescription 4",
+      "id": "4",
+      "categories": "phone"
     }
   ]
 }
